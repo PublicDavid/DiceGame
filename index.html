@@ -1,0 +1,35 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Dice Game - Best of 3</h1>
+            <div class="bestof">
+                <h1>Player 1<span class="player1BestOf"><span>&bull;</span><span>&bull;</span><span>&bull;</span></span></h1>
+                <h1>Player 2<span class="player2BestOf"><span>&bull;</span><span>&bull;</span><span>&bull;</span></span></h1>
+            </div>
+            <h1 id="message">Player 1 Turn</h1>
+            <div class="players">
+                <div id="player1">
+                    <h1>Score: 
+                        <span id="player1Scoreboard">0</span>
+                    </h1>
+                    <div id="player1Dice" class="dice active">-</div>
+                </div>
+                <div id="player2">
+                    <h1>Score: 
+                        <span id="player2Scoreboard">0</span>
+                    </h1>
+                    <div id="player2Dice" class="dice">-</div>
+                </div>
+            </div>
+
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <button id="resetBtn">Reset Game 🔁</button>
+            <button id="doubleBtn">💰 Double or Nothing 😭</button>
+            <p id="doubleMessage">You rolled 2, we double it! 💰</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
